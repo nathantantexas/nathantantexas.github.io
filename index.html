@@ -51,14 +51,6 @@
             align-items: center;
             padding: 0 2rem;
             height: 56px;
-            opacity: 0;
-            transform: translateY(-100%);
-            transition: opacity 0.3s, transform 0.3s;
-        }
-
-        nav.visible {
-            opacity: 1;
-            transform: translateY(0);
         }
 
         nav .logo {
@@ -457,7 +449,7 @@
 
     <!-- STICKY NAV (appears on scroll) -->
     <nav id="navbar">
-        <div class="logo">Nathan George Tan</div>
+        <div class="logo">NGT</div>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#introduction">Intro</a></li>
@@ -568,16 +560,6 @@
         <a href="https://github.com/nathantantexas">GitHub</a> &mdash; 2026
     </footer>
 
-    <script>
-        const navbar = document.getElementById('navbar');
-        const home = document.getElementById('home');
-
-        const observer = new IntersectionObserver(([entry]) => {
-            navbar.classList.toggle('visible', !entry.isIntersecting);
-        }, { threshold: 0.1 });
-
-        observer.observe(home);
-    </script>
 
 </body>
 </html>
