@@ -1,2 +1,3 @@
 # nathantantexas.github.io
-Hi
+personal website
+
