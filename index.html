@@ -279,19 +279,35 @@
             color: var(--bg);
             transform: rotateY(180deg);
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             text-align: center;
             padding: 1.5rem;
         }
 
-        .card-back span {
+        .card-back .card-title {
             font-family: 'Space Grotesk', sans-serif;
             font-weight: 700;
             font-size: 1.1rem;
             text-transform: uppercase;
             letter-spacing: 2px;
             line-height: 1.4;
+        }
+
+        .card-back .card-species {
+            font-style: italic;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            margin-top: 0.4rem;
+            text-transform: none;
+        }
+
+        .card-back .card-meta {
+            font-size: 0.65rem;
+            letter-spacing: 1.5px;
+            margin-top: 0.8rem;
+            opacity: 0.7;
         }
 
         /* AWARDS */
@@ -424,7 +440,7 @@
                 grid-template-columns: repeat(2, 1fr);
             }
 
-            .card-back span {
+            .card-back .card-title {
                 font-size: 0.85rem;
             }
 
@@ -599,56 +615,92 @@
         <div class="section-body gallery">
             <div class="gallery-item">
                 <div class="card-inner">
-                    <div class="card-front"><img src="images/anothe-grat-butter.jpg" alt="Anothe Grat Butter"></div>
-                    <div class="card-back"><span>Anothe Grat Butter</span></div>
+                    <div class="card-front"><img src="images/anothe-grat-butter.jpg" alt="Viceroy"></div>
+                    <div class="card-back">
+                        <div class="card-title">Viceroy</div>
+                        <div class="card-species"><em>Limenitis archippus</em></div>
+                        <div class="card-meta">2025 · sony rx100 vii</div>
+                    </div>
                 </div>
             </div>
             <div class="gallery-item">
                 <div class="card-inner">
-                    <div class="card-front"><img src="images/another-great-dragger.jpg" alt="Another Great Dragger"></div>
-                    <div class="card-back"><span>Another Great Dragger</span></div>
+                    <div class="card-front"><img src="images/another-great-dragger.jpg" alt="Dragonfly"></div>
+                    <div class="card-back">
+                        <div class="card-title">Dragonfly</div>
+                        <div class="card-species"><em>Libellula luctuosa</em></div>
+                        <div class="card-meta">2025 · sony rx100 vii</div>
+                    </div>
                 </div>
             </div>
             <div class="gallery-item">
                 <div class="card-inner">
-                    <div class="card-front"><img src="images/beautiful.jpg" alt="Beautiful"></div>
-                    <div class="card-back"><span>Beautiful</span></div>
+                    <div class="card-front"><img src="images/beautiful.jpg" alt="Monarch"></div>
+                    <div class="card-back">
+                        <div class="card-title">Monarch</div>
+                        <div class="card-species"><em>Danaus plexippus</em></div>
+                        <div class="card-meta">2025 · sony rx100 vii</div>
+                    </div>
                 </div>
             </div>
             <div class="gallery-item">
                 <div class="card-inner">
-                    <div class="card-front"><img src="images/another-great-moth.jpg" alt="Another Great Moth"></div>
-                    <div class="card-back"><span>Another Great Moth</span></div>
+                    <div class="card-front"><img src="images/another-great-moth.jpg" alt="Moth"></div>
+                    <div class="card-back">
+                        <div class="card-title">Moth</div>
+                        <div class="card-species"><em>Phyciodes mylitta</em></div>
+                        <div class="card-meta">2025 · sony rx100 vii</div>
+                    </div>
                 </div>
             </div>
             <div class="gallery-item">
                 <div class="card-inner">
-                    <div class="card-front"><img src="images/beautfiul-echinacea.jpg" alt="Beautfiul Echinacea"></div>
-                    <div class="card-back"><span>Beautfiul Echinacea</span></div>
+                    <div class="card-front"><img src="images/beautfiul-echinacea.jpg" alt="Wildflowers (pink)"></div>
+                    <div class="card-back">
+                        <div class="card-title">Wildflowers (pink)</div>
+                        <div class="card-species"><em>Echinacea angustifolia</em></div>
+                        <div class="card-meta">2026 · sony rx100 vii</div>
+                    </div>
                 </div>
             </div>
             <div class="gallery-item">
                 <div class="card-inner">
-                    <div class="card-front"><img src="images/bumbleeee.jpg" alt="Bumbleeee"></div>
-                    <div class="card-back"><span>Bumbleeee</span></div>
+                    <div class="card-front"><img src="images/bumbleeee.jpg" alt="Bumblebee"></div>
+                    <div class="card-back">
+                        <div class="card-title">Bumblebee</div>
+                        <div class="card-species"><em>Bombus terrestris</em></div>
+                        <div class="card-meta">2025 · sony rx100 vii</div>
+                    </div>
                 </div>
             </div>
             <div class="gallery-item">
                 <div class="card-inner">
-                    <div class="card-front"><img src="images/echinacea.jpg" alt="Echinacea"></div>
-                    <div class="card-back"><span>Echinacea</span></div>
+                    <div class="card-front"><img src="images/echinacea.jpg" alt="Wildflowers (pink)"></div>
+                    <div class="card-back">
+                        <div class="card-title">Wildflowers (pink)</div>
+                        <div class="card-species"><em>Echinacea angustifolia</em></div>
+                        <div class="card-meta">2026 · sony rx100 vii</div>
+                    </div>
                 </div>
             </div>
             <div class="gallery-item">
                 <div class="card-inner">
-                    <div class="card-front"><img src="images/helianthis.jpg" alt="Helianthis"></div>
-                    <div class="card-back"><span>Helianthis</span></div>
+                    <div class="card-front"><img src="images/helianthis.jpg" alt="Yellow flower"></div>
+                    <div class="card-back">
+                        <div class="card-title">Yellow flower</div>
+                        <div class="card-species"><em>Helianthus angustifolius</em></div>
+                        <div class="card-meta">2025 · sony rx100 vii</div>
+                    </div>
                 </div>
             </div>
             <div class="gallery-item">
                 <div class="card-inner">
-                    <div class="card-front"><img src="images/rutibida.jpg" alt="Rutibida"></div>
-                    <div class="card-back"><span>Rutibida</span></div>
+                    <div class="card-front"><img src="images/rutibida.jpg" alt="Wildflower (red)"></div>
+                    <div class="card-back">
+                        <div class="card-title">Wildflower (red)</div>
+                        <div class="card-species"><em>Ratibida columnifera</em></div>
+                        <div class="card-meta">2025 · sony rx100 vii</div>
+                    </div>
                 </div>
             </div>
         </div>
